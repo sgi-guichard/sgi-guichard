@@ -88,6 +88,9 @@ a {
 	cursor: pointer;
 }
 
+.wrapper{
+	display: none;
+}
 
 .welcome-section{
 	display: flex;
