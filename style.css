@@ -84,9 +84,6 @@ a {
 	cursor: pointer;
 }
 
-.wrapper{
-	display: none;
-}
 
 .welcome-section{
 	display: flex;
@@ -510,6 +507,10 @@ footer {
 		right: 0;
 		height: 100vh;
 		width: 100%;	
+	}
+	
+	.wrapper{
+		display: none;
 	}
 	
 	
