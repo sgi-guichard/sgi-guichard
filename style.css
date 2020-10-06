@@ -31,11 +31,7 @@ a {
 }
 /* Desktop view */
 .logo{
-	/*text-decoration: none;
-	color: #575757;
-	letter-spacing: 1.5px;
-	font-size: 25px;*/
-	width: 50px;
+	width: 120px;
 }
 
 .navbar {
@@ -45,7 +41,7 @@ a {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	padding: 20px 30px;
+	padding: 10px 30px;
 	box-sizing: border-box;
 }
 
@@ -514,6 +510,11 @@ footer {
 		right: 0;
 		height: 100vh;
 		width: 100%;	
+	}
+	
+	
+	.logo {
+    		width: 75px;
 	}
 
 	.welcome-section > h1{
