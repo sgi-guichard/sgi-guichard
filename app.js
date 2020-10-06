@@ -2,6 +2,7 @@ console.log("Hello");
 /********************Navbar On Mobile**************************/
 const openIcon = document.querySelector('.icon');
 const linksWrapper = document.querySelector('.links-wrapper');
+const wrapper = document.querySelector('.wrapper');
 const backdrop = document.querySelector('.backdrop');
 const closeIcon = document.querySelector('.close-btn');
 const navLink = document.querySelector('.links');
@@ -9,6 +10,11 @@ const body = document.querySelector('body');
 
 openIcon.addEventListener('click', () => {
 	linksWrapper.classList.add('open');
+	body.classList.add('no-scroll');
+});
+
+openIcon.addEventListener('click', () => {
+	wrapper.classList.remove('wrapper');
 	body.classList.add('no-scroll');
 });
 
@@ -39,6 +45,7 @@ yearEvo.innerHTML = year;
 
 
 
+
 $(document).ready(function(){
     $('.customer-logos').slick({
         slidesToShow: 6,
@@ -49,7 +56,7 @@ $(document).ready(function(){
         dots: false,
         pauseOnHover: false,
         responsive: [{
-            breakpoint: 768,
+            breakpoint: 600,
             settings: {
                 slidesToShow: 2
             }
