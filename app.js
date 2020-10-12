@@ -1,12 +1,14 @@
 /********************Navbar On Mobile-**************************/
 
-var navbar = document.querySelector(".navbar")
-var ham = document.querySelector(".ham")
+var navbar = document.querySelector(".navbar");
+var ham = document.querySelector(".ham");
+var body = document.querySelector("body");
 
 // toggles hamburger menu in and out when clicking on the hamburger
 function toggleHamburger(){
-  navbar.classList.toggle("showNav")
-  ham.classList.toggle("showClose")
+  navbar.classList.toggle("showNav");
+  ham.classList.toggle("showClose");
+  body.classList.toggle("no-scroll");  
 }
 
 ham.addEventListener("click", toggleHamburger)
@@ -17,7 +19,7 @@ ham.addEventListener("click", toggleHamburger)
 var menuLinks = document.querySelectorAll(".menuLink")
 menuLinks.forEach( 
   function(menuLink) { 
-    menuLink.addEventListener("click", toggleHamburger) 
+    menuLink.addEventListener("click", toggleHamburger); 
   }
 )
 
