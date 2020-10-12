@@ -30,14 +30,19 @@ a {
     color: #000;
 }
 /* Desktop view */
-.logo{
-	width: 120px;
-}
 
 header{
 	display: flex;
-    	justify-content: center;
-    	padding: 10px;
+    align-items: center;
+    padding: 10px;
+}
+
+.logo{
+	/*text-decoration: none;
+	color: #575757;
+	letter-spacing: 1.5px;
+	font-size: 25px;*/
+	width: 120px;
 }
 
 .navbar {
@@ -46,8 +51,12 @@ header{
 	display: flex;
 	justify-content: flex-end;
 	align-items: center;
-	padding: 10px 30px;
+	padding: 20px 30px;
 	box-sizing: border-box;
+}
+
+/*.links-wrapper{
+	animation: 0.4s ease-in-out forwards;
 }
 
 .icon,
@@ -55,7 +64,7 @@ header{
 	display: none;
 	font-size: 1.2em;
 	cursor: pointer;
-}
+}*/
 
 .links {
 	display: flex;
@@ -88,6 +97,7 @@ header{
 	background: rgba(0, 0, 0, 0.8);
 	cursor: pointer;
 }
+
 
 
 .welcome-section{
@@ -435,9 +445,29 @@ footer {
 }
 @media (max-width: 775px) {
 
+	header{
+		display: flex;
+		align-items: center;
+		padding: 10px;
+	}
+
+	.logo{
+		padding: 5px;
+	}
+
+	/*
+	.links-wrapper{
+		transition: 0.3s ease-in-out;
+		top: 0;
+		right: 0;
+		transform: translateX(100%);
+		overflow: hidden;
+	}
+
+	
 	.no-scroll {
 		overflow: hidden;
-		padding-right: 20px;
+		transition: 0.3s ease-in-out;
 	}
 
 	.icon,
@@ -453,9 +483,10 @@ footer {
 	.links {
 		position: absolute;
 		top: 0;
+		right: 0;
+		transform: translateX(100%);
 		height: 100%;
 		width: 90%;
-		right: -90%;
 		background: #fff;
 		flex-direction: column;
 		justify-content: center;
@@ -483,18 +514,23 @@ footer {
 	.close-btn:hover {
 		color: #000;
 		cursor: pointer;
-    }
+    }*/
     
     /* Open class */
-	
+	/*.open{
+		transition: 0.3s ease-in-out;
+		transform: translateX(0);
+		overflow: visible;
+	}
+
 	.open .links {
 		overflow: auto;
 		position: fixed;
 		display: flex;
 		text-align: center;
-		right: 0;
 		height: 100vh;
-		width: 80%;
+		width: 80vw;
+		transform: translateX(0)
     }
     
 	.open .close-btn {
@@ -512,15 +548,6 @@ footer {
 		right: 0;
 		height: 100vh;
 		width: 100%;	
-	}
-	
-	.wrapper{
-		display: none;
-	}
-	
-	
-	.logo {
-    		width: 80px;
 	}
 
 	.welcome-section > h1{
@@ -554,6 +581,68 @@ footer {
 
 	.company{
 		display: inline-block;
-	}
+	}*/
+	.ham {
+		position: absolute;
+		/* always keep ham on top of everything */
+		z-index: 1000;
+		top: 13px;
+		right: 20px;
+		width: 30px;
+		height: 30px;
+		border: none;
+		cursor: pointer;
+		background-color: transparent;
+		background-image: url("https://ljc-dev.github.io/testing0/ham.svg");
+		background-size: 100%;
+	  }
+	  
+	  
+	  /* change ham image to close */
+	  .showClose {
+		background-image: url("https://ljc-dev.github.io/testing0/ham-close.svg");
+	  }
+	  
+	  .navbar {
+		position: absolute;
+		top: 0;
+		left: 0;
+		background: black;
+		width: 100vw;
+		height: 100vh;
+		overflow: hidden;
+		color: white;
+		/* hide the menu above the screen by default */
+		transform: translateY(-100%);
+		/* transition adds a little animation when sliding in and out the menu */
+		transition: transform 0.2s ease;
+	  }
+	  
+	  
+	  .showNav {
+		/* show the menu */
+		transform: translateY(0);
+	  }
+	  
+	  /* basic nav styling below */
+	  
+	  .navbar ul {
+		width: 100%;
+		height: 100%;
+		list-style: none;
+		display: flex;
+		flex-flow: column nowrap;
+		justify-content: space-evenly;
+		align-items: center;
+	  }
+	  
+	  .navbar ul li a {
+		color: white;
+		padding-bottom: 10px;
+		border-bottom: 2px solid black;
+		text-decoration: none;
+		font-family: 'Open Sans', sans-serif;
+		font-size: 1.2rem;
+	  }
 }
 /****************************************************************************************/
