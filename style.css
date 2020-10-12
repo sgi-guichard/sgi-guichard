@@ -454,101 +454,13 @@ footer {
 	.logo{
 		padding: 5px;
 	}
-
-	/*
-	.links-wrapper{
-		transition: 0.3s ease-in-out;
-		top: 0;
-		right: 0;
-		transform: translateX(100%);
-		overflow: hidden;
-	}
-
 	
 	.no-scroll {
 		overflow: hidden;
 		transition: 0.3s ease-in-out;
 	}
 
-	.icon,
-	.close-btn {
-		display: block;
-    }
-    
-	.icon {
-		position: absolute;
-		right: 1.5rem;
-    }
-    
-	.links {
-		position: absolute;
-		top: 0;
-		right: 0;
-		transform: translateX(100%);
-		height: 100%;
-		width: 90%;
-		background: #fff;
-		flex-direction: column;
-		justify-content: center;
-		text-align: center;
-		z-index: 2;
-		transition: 0.3s ease-in-out;
-    }
-    
-	.links li {
-		margin-right: 0;
-		margin-bottom: 50px;
-		font-size: 1.5em;
-    }
-    
-	.close-btn {
-		position: absolute;
-		top: 24px;
-		right: -90vh;
-		color: #575757;
-		font-size: 2em;
-		z-index: 3;
-		transition: 0.3s ease-in-out;
-    }
-    
-	.close-btn:hover {
-		color: #000;
-		cursor: pointer;
-    }*/
-    
-    /* Open class */
-	/*.open{
-		transition: 0.3s ease-in-out;
-		transform: translateX(0);
-		overflow: visible;
-	}
 
-	.open .links {
-		overflow: auto;
-		position: fixed;
-		display: flex;
-		text-align: center;
-		height: 100vh;
-		width: 80vw;
-		transform: translateX(0)
-    }
-    
-	.open .close-btn {
-		top: 7px;
-		right: 19.5px;
-		position: fixed;
-    }
-    
-	.open .backdrop {
-		overflow: auto;
-		position: fixed;
-		display: block;
-		text-align: center;
-		top: 0;
-		right: 0;
-		height: 100vh;
-		width: 100%;	
-	}
 
 	.welcome-section > h1{
 		text-align: center;
