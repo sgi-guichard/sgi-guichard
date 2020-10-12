@@ -431,8 +431,6 @@ footer {
 @media (max-width: 775px) {
 	.no-scroll{
 		overflow-y: hidden !important;
-		padding-right: 20px;
-
 	}
 
 	header{
@@ -450,10 +448,10 @@ footer {
 		position: absolute;
 		/* always keep ham on top of everything */
 		z-index: 1000;
-		top: 30px;
+		top: 20px;
 		right: 20px;
-		width: 30px;
-		height: 30px;
+		width: 36px;
+		height: 36px;
 		border: none;
 		outline: none;
 		cursor: pointer;
@@ -478,7 +476,7 @@ footer {
 		overflow: hidden;
 		color: white;
 		/* hide the menu above the screen by default */
-		transform: translateX(100%);
+		transform: translateX(-100%);
 		/* transition adds a little animation when sliding in and out the menu */
 		transition: transform 0.2s ease;
 	  }
@@ -487,7 +485,6 @@ footer {
 	  .showNav {
 		/* show the menu */
 		transform: translateX(0);
-		overflow-y: hidden;
 	  }
 	  
 	  /* basic nav styling below */
@@ -502,10 +499,6 @@ footer {
 		align-items: center;
 	  }
 	  
-	  .links li {
-		margin-right: 0;
-	 }
-
 	  .navbar ul li a {
 		color: white;
 		padding-bottom: 10px;
