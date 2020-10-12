@@ -429,6 +429,11 @@ footer {
 
 }
 @media (max-width: 775px) {
+	.no-scroll{
+		overflow-y: hidden !important;
+		padding-right: 20px;
+
+	}
 
 	header{
 		display: flex;
@@ -509,10 +514,7 @@ footer {
 		font-size: 1.2rem;
 	  }
 	
-	  .noScroll{
-		overflow-y: hidden;
-		display: fixed;
-	}  
+	
 
 	.welcome-section > h1 {
 		text-align: center
