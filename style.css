@@ -448,10 +448,10 @@ footer {
 		position: absolute;
 		/* always keep ham on top of everything */
 		z-index: 1000;
-		top: 20px;
+		top: 15px;
 		right: 20px;
-		width: 36px;
-		height: 36px;
+		width: 30px;
+		height: 30px;
 		border: none;
 		outline: none;
 		cursor: pointer;
