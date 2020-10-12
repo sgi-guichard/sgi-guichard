@@ -22,7 +22,6 @@ html{
 body {
 	min-height: 100vh;
 	font-family: 'Poppins';
-	overflow-x: hidden;
 }
 
 a {
@@ -451,6 +450,7 @@ footer {
 		width: 30px;
 		height: 30px;
 		border: none;
+		outline: none;
 		cursor: pointer;
 		background-color: transparent;
 		background-image: url("https://ljc-dev.github.io/testing0/ham.svg");
@@ -482,6 +482,7 @@ footer {
 	  .showNav {
 		/* show the menu */
 		transform: translateX(0);
+		overflow-y: hidden;
 	  }
 	  
 	  /* basic nav styling below */
@@ -507,5 +508,25 @@ footer {
 		font-family: 'Open Sans', sans-serif;
 		font-size: 1.2rem;
 	  }
+	
+	  .noScroll{
+		overflow-y: hidden;
+		display: fixed;
+	}  
+
+	.welcome-section > h1 {
+		text-align: center
+	}
+
+	.address {	
+		padding-right: 5px;			
+	} 		
+			
+	.rights{	
+		padding-left: 5px;		
+	}	
+	.company{	
+		display: inline-block;			
+	}
 }
 /****************************************************************************************/
