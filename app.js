@@ -1,38 +1,46 @@
-console.log("Hello");
-/********************Navbar On Mobile**************************/
-const openIcon = document.querySelector('.icon');
-const linksWrapper = document.querySelector('.links-wrapper');
-const wrapper = document.querySelector('.wrapper');
-const backdrop = document.querySelector('.backdrop');
-const closeIcon = document.querySelector('.close-btn');
-const navLink = document.querySelector('.links');
-const body = document.querySelector('body');
-
-openIcon.addEventListener('click', () => {
-	linksWrapper.classList.add('open');
-	body.classList.add('no-scroll');
-});
-
-openIcon.addEventListener('click', () => {
-	wrapper.classList.remove('wrapper');
-	body.classList.add('no-scroll');
-});
-
-closeIcon.addEventListener('click', () => {
-	linksWrapper.classList.remove('open');
-	body.classList.remove('no-scroll');
-});
-
-backdrop.addEventListener('click', () => {
-	linksWrapper.classList.remove('open');
-	body.classList.remove('no-scroll');
-});
-
-navLink.addEventListener('click', () =>{
-	linksWrapper.classList.remove('open');
-	body.classList.remove('no-scroll');
-});
 /********************Navbar On Mobile-**************************/
+
+var navbar = document.querySelector(".navbar")
+var ham = document.querySelector(".ham")
+
+// toggles hamburger menu in and out when clicking on the hamburger
+function toggleHamburger(){
+  navbar.classList.toggle("showNav")
+  ham.classList.toggle("showClose")
+}
+
+ham.addEventListener("click", toggleHamburger)
+
+// toggle when clicking on links
+
+// METHOD 1
+var menuLinks = document.querySelectorAll(".menuLink")
+menuLinks.forEach( 
+  function(menuLink) { 
+    menuLink.addEventListener("click", toggleHamburger) 
+  }
+)
+
+// METHOD 2 
+
+// used event delegation to not have to add a listener to every link
+// learnt event delegation from @coderarchive
+// https://dev.to/coderarchive/event-delegation-in-js-1aff
+// comment METHOD 1 & uncomment the following to try METHOD 2
+
+/*
+
+function checkToggle(e){
+  var itemClicked = e.target
+  if (itemClicked.classList.contains("menuLink")) {
+    toggleHamburger()
+  }
+}
+
+navbar.addEventListener("click", checkToggle)
+
+*/
+/********************Navbar On Mobile***************************/
 
 
 /********************Year copyright footer-**************************/
@@ -43,9 +51,7 @@ yearEvo.innerHTML = year;
 /********************Year copyright footer-**************************/
 
 
-
-
-
+/********************Logo Slider***************************/
 $(document).ready(function(){
     $('.customer-logos').slick({
         slidesToShow: 6,
@@ -68,3 +74,4 @@ $(document).ready(function(){
         }]
     });
 });
+/********************Logo Slider***************************/
