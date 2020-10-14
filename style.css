@@ -153,6 +153,7 @@ header{
 .text-about{
 	margin-bottom: 1.2em;
 	text-align: justify;
+	letter-spacing: -1px;
 }
 
 .bim-part{
