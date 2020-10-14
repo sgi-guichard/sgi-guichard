@@ -155,6 +155,19 @@ header{
 	text-align: justify;
 }
 
+.bim-part{
+	display: flex;
+    align-items: center;
+}
+
+.img-bim{
+	width: 180px;
+}
+
+.text-bim{
+	padding: 15px;
+}
+
 .methods{
 	display: flex;
     margin: auto;
@@ -448,10 +461,10 @@ footer {
 		position: absolute;
 		/* always keep ham on top of everything */
 		z-index: 1000;
-		top: 30px;
+		top: 20px;
 		right: 20px;
-		width: 30px;
-		height: 30px;
+		width: 36px;
+		height: 36px;
 		border: none;
 		outline: none;
 		cursor: pointer;
