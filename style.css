@@ -157,11 +157,12 @@ header{
 
 .bim-part{
 	display: flex;
-    align-items: center;
+    	align-items: center;
 }
 
 .img-bim{
 	width: 180px;
+	padding: 20px;
 }
 
 .text-bim{
