@@ -161,12 +161,11 @@ header{
 }
 
 .img-bim{
-	width: 180px;
-	padding: 20px;
+	width: 100px;
 }
 
 .text-bim{
-	padding: 15px;
+	padding-left: 5px;
 }
 
 .methods{
