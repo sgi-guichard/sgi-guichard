@@ -465,7 +465,7 @@ footer {
 		position: absolute;
 		/* always keep ham on top of everything */
 		z-index: 1000;
-		top: 20px;
+		top: 30px;
 		right: 20px;
 		width: 36px;
 		height: 36px;
