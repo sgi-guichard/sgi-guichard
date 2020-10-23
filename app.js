@@ -1,8 +1,17 @@
+/********************Maintenance display************************/
+var maintenance = document.querySelector(".maintenance");
+var maintenanceclose = document.querySelector(".maintenance-close");
+
+maintenanceclose.addEventListener('click', () => {
+	maintenance.classList.add('disappear');
+});
+
 /********************Navbar On Mobile-**************************/
 
 var navbar = document.querySelector(".navbar");
 var ham = document.querySelector(".ham");
 var body = document.querySelector("body");
+
 
 // toggles hamburger menu in and out when clicking on the hamburger
 function toggleHamburger(){

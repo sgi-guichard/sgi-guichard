@@ -85,6 +85,30 @@ header{
 	transition: 0.5s;
 }
 
+.maintenance{
+	background-color: #00b8b8;
+	color: #f0f0f0;
+	text-align: center;
+	display: flex;
+	justify-content: center;
+}
+
+.maintenance-close{
+	color: #f0f0f0;
+	background-color: transparent;
+	outline: none;
+	border: none;
+	cursor: pointer;
+	position: absolute;
+	right: 0;
+	width: 20px;
+	height: 25px;
+}
+
+.disappear{
+	display: none;
+}
+
 .welcome-section{
 	display: flex;
 	flex-direction: column;
