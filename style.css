@@ -107,6 +107,7 @@ header{
 
 .disappear{
 	display: none;
+	transition: 0.5s;
 }
 
 .welcome-section{
@@ -526,6 +527,7 @@ footer {
 		transform: translateX(-100%);
 		/* transition adds a little animation when sliding in and out the menu */
 		transition: transform 0.2s ease;
+		z-index: 100;
 	  }
 	  
 	  
